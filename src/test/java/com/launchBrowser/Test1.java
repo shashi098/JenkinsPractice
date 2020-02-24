@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Test1 {
 	
 	
-	WebDriver driver;
+
 	
 	
 	  static { System.setProperty("webdriver.gecko.driver","./driver/geckodriver.exe"); 
@@ -22,12 +22,14 @@ public class Test1 {
 		
 		//System.out.println("test>>>>>>");
 		
-		  driver=new FirefoxDriver();
+		WebDriver driver=new FirefoxDriver();
 		  
 		 //driver=new ChromeDriver();
 		 driver.manage().window().maximize();
-		 driver.get("https://www.flipkart.com"); String title = driver.getTitle();
-		 System.out.println(title); driver.quit();
+		 driver.get("https://www.flipkart.com"); 
+		 String title = driver.getTitle();
+		 System.out.println(title); 
+		 driver.quit();
 		 
 	}
 
