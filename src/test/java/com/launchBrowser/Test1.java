@@ -23,7 +23,8 @@ public class Test1 {
 		
 		  driver=new FirefoxDriver();
 		  
-		 driver=new ChromeDriver(); driver.manage().window().maximize();
+		 //driver=new ChromeDriver();
+		 driver.manage().window().maximize();
 		 driver.get("https://www.flipkart.com"); String title = driver.getTitle();
 		 System.out.println(title); driver.quit();
 		 
