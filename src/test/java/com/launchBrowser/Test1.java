@@ -10,23 +10,24 @@ public class Test1 {
 	
 	WebDriver driver;
 	
-	static
-	{
-		System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-	}
+	/*
+	 * static { System.setProperty("webdriver.gecko.driver",
+	 * "./driver/geckodriver.exe"); System.setProperty("webdriver.chrome.driver",
+	 * "./driver/chromedriver.exe"); }
+	 */
 	
 	@Test
 	public void openApp()
 	{
-		driver=new FirefoxDriver();
 		
-		//driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://www.flipkart.com/");
-		String title = driver.getTitle();
-		System.out.println(title);
-		driver.quit();
+		System.out.println("test.....");
+		/*
+		 * driver=new FirefoxDriver();
+		 * 
+		 * //driver=new ChromeDriver(); driver.manage().window().maximize();
+		 * driver.get("https://www.flipkart.com/"); String title = driver.getTitle();
+		 * System.out.println(title); driver.quit();
+		 */
 	}
 
 }
