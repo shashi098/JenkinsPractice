@@ -18,7 +18,11 @@ public class Test1 {
 	public void openApp()
 	{
 		driver=new FirefoxDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
+		String title = driver.getTitle();
+		System.out.println(title);
+		driver.quit();
 	}
 
 }
