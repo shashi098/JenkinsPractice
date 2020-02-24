@@ -12,7 +12,8 @@ public class Test1 {
 	
 	
 	  static { System.setProperty("webdriver.gecko.driver","./driver/geckodriver.exe"); 
-	  System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe"); }
+	 // System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+	  }
 	 
 	
 	@Test
